@@ -1,0 +1,14 @@
+{
+  "name": "__NAME__",
+  "version": "1.0.0",
+  "description": "A p5.js project scaffolded by create-p5js-app.",
+  "scripts": {
+    "start": "vite --open"
+  },
+  "dependencies": {
+    "p5": "^1.11.3"
+  },
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
+}

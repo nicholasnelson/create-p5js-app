@@ -1,0 +1,50 @@
+{
+  "name": "create-p5js-app",
+  "version": "1.0.0",
+  "description": "A tool to generate a basic p5.js project scaffolding.",
+  "main": "index.js",
+  "bin": {
+    "create-p5js-app": "index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "npm run format && npm run lint && npm run test"
+  },
+  "keywords": [
+    "p5.js",
+    "scaffold",
+    "template",
+    "npx"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.mjs$": "babel-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "author": "Nicholas Nelson (https://github.com/nicholasnelson)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasnelson/create-p5js-app.git"
+  },
+  "license": "LGPL-2.1",
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.3",
+    "commander": "^13.1.0",
+    "p5": "^1.11.3",
+    "validate-npm-package-name": "^6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2"
+  }
+}
